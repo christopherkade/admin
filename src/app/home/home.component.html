@@ -1,26 +1,21 @@
 <div class="home container is-fluid">
-  <div class="tile is-ancestor">
-    
-    <div class="tile is-parent is-vertical is-3">
-      <article class="tile is-child">
-        <app-weather></app-weather>
-      </article>
-      
-      <article class="tile is-child">
-        <app-learning></app-learning>
-      </article>
+  
+  <div class="columns">
+    <div class="column is-one-quarter-desktop">
+      <app-weather></app-weather>
     </div>
-    
-    <div class="tile is-parent">
-      <article class="tile is-child is-3">
-        <app-post></app-post>
-      </article>      
+    <div class="column is-one-quarter-desktop">
+      <app-post></app-post>
     </div>
-    
-    <!-- <div class="tile is-parent">
-      <article class="tile is-child">
-        <app-chart></app-chart>
-      </article>
-    </div>     -->    
+    <div class="column is-one-quarter-desktop">
+      <app-starred></app-starred>
+    </div>    
   </div>
+  
+  <div class="columns">
+    <div class="column is-one-quarter-desktop">
+      <app-learning></app-learning>
+    </div>
+  </div>
+  
 </div>

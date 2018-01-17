@@ -1,3 +1,4 @@
+import { GithubService } from './../service/github.service';
 import { WeatherService } from './../service/weather.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -11,6 +12,7 @@ import { WeatherComponent } from './weather/weather.component';
 import { LearningComponent } from './learning/learning.component';
 import { ChartComponent } from './chart/chart.component';
 import { PostComponent } from './post/post.component';
+import { StarredComponent } from './starred/starred.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +22,18 @@ import { PostComponent } from './post/post.component';
     WeatherComponent,
     LearningComponent,
     ChartComponent,
-    PostComponent
+    PostComponent,
+    StarredComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpModule
   ],
-  providers: [WeatherService],
+  providers: [
+    WeatherService, 
+    GithubService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
