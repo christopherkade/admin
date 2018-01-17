@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 export class WeatherService {
 
   readonly api_key = '58655afd918845ea8b9164030181701';
-  readonly ENDPOINT = 'http://api.apixu.com/v1/current.json?key=';
+  readonly ENDPOINT = 'https://api.apixu.com/v1/current.json?key=';
   
   constructor(private http: Http) { }
 

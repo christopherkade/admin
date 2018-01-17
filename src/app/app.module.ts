@@ -9,8 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { WeatherComponent } from './weather/weather.component';
 import { LearningComponent } from './learning/learning.component';
-import { TodayComponent } from './today/today.component';
 import { ChartComponent } from './chart/chart.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +19,8 @@ import { ChartComponent } from './chart/chart.component';
     NavComponent,
     WeatherComponent,
     LearningComponent,
-    TodayComponent,
-    ChartComponent
+    ChartComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

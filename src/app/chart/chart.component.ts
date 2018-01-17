@@ -1,16 +1,11 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-chart',
   templateUrl: './chart.component.html',
   styleUrls: ['./chart.component.sass']
 })
-export class ChartComponent implements OnInit {
-  
+export class ChartComponent {
   constructor() { }
-  
-  ngOnInit() {
-  }
-
 }
   
