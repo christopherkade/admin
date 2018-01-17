@@ -1,0 +1,17 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">   
+    <div class="button navbar-burger" (click)="openBurger = !openBurger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  
+  <div class="navbar-menu" [ngClass]="{ 'is-active': openBurger }">
+    <div class="navbar-start">
+      <a class="navbar-item" routerLink="/">
+        Home
+      </a>
+    </div>
+  </div>
+</nav>

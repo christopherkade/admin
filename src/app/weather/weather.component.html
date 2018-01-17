@@ -1,0 +1,35 @@
+<div class="card"> 
+  <div class="card-content">      
+    <div class="content"> 
+      
+      <div class="info-header">
+        <div class="title">
+          {{weather.city}}
+        </div>
+        <div class="subtitle">{{date.dayString}} {{date.dayNumber}} {{date.monthString}}</div>
+      </div>
+      
+      <div class="title weather-value">{{weather.temp_c}}° C</div>      
+      
+      <div class="details level">
+        <div class="level-left">
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="subtitle">Hum</p>
+              <p class="title details-value">{{weather.hum}}%</p>
+            </div>
+          </div>
+        </div>
+        <div class="level-right">
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="subtitle">Wind</p>
+              <p class="title details-value">{{weather.wind}} km/h</p>
+            </div>
+          </div>
+        </div>        
+      </div>
+      
+    </div>
+  </div>
+</div>

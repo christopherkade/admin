@@ -1,0 +1,32 @@
+@import ../../node_modules/bulma/sass/utilities/initial-variables
+@import ../../node_modules/bulma/sass/utilities/functions
+
+// THEME DARK
+$primary: #2D2767
+$primary-light: #3D3780
+$primary-dark: #2F296B
+
+
+// THEME LIGHT
+$secondary: #e8eaf6
+$secondary-light: #ffffff
+$secondary-dark: #b6b8c3
+
+$navbar-item-hover-color: $primary
+$navbar-item-hover-background-color: $secondary
+$navbar-item-color: #ffffff
+
+// SCREEN SIZE
+// Small tablets (portrait view)
+$screen-sm-height: 600px
+$screen-sm: 850px
+// Tablets and small desktops
+$screen-md: 992px
+// Large tablets and desktops
+$screen-lg: 1200px
+$screen-xl: 1900px
+
+// --columnGap variable causing warnings with newest Angular version
+// Commented out last lines of /bulma/sass/grid/columns.sass to remove warnings
+// Add back in when we need the is-variable feature or when fixed
+@import "~bulma"

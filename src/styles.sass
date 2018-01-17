@@ -1,0 +1,24 @@
+@import ./modules/variables
+@import ./modules/mixins
+
+body
+  font-family: 'Quicksand', sans-serif
+
+html
+    height: 100%
+    background-color: $primary    
+
+button:focus, a
+  outline: 0
+
+button::-moz-focus-inner
+  border: 0
+
+.card
+    text-align: center
+    border-radius: 10px
+    padding: 10px
+    background-color: $primary-light
+
+.title, .subtitle
+  color: white
