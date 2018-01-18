@@ -1,16 +1,19 @@
 @import ../../styles
 
-.post-title
+.card
+    height: 100%
+
+.card-header-title
+    color: white
     text-align: left
-    font-size: 1.5em
-    
+
 .post-description
     color: white
     text-align: justify
 
-@include sm
-    .post-title
-        font-size: 1.1em
+.content
+    margin-top: 15px
 
+@include sm
     .post-description
         font-size: 1em

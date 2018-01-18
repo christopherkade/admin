@@ -10,7 +10,6 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { WeatherComponent } from './weather/weather.component';
 import { LearningComponent } from './learning/learning.component';
-import { ChartComponent } from './chart/chart.component';
 import { PostComponent } from './post/post.component';
 import { StarredComponent } from './starred/starred.component';
 
@@ -21,7 +20,6 @@ import { StarredComponent } from './starred/starred.component';
     NavComponent,
     WeatherComponent,
     LearningComponent,
-    ChartComponent,
     PostComponent,
     StarredComponent
   ],

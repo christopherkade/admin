@@ -1,30 +1,33 @@
-<div class="home container is-fluid">
-  
-  <div class="tile is-ancestor">
-    <!-- WEATHER -->
-    <!-- LEARNING -->
-    <div class="tile is-parent is-vertical is-3">
-      <article class="tile is-child">
-        <app-weather></app-weather>
-      </article>
-      
-      <article class="tile is-child">
-        <app-learning></app-learning>
-      </article>        
-    </div>   
-    
-    <!-- PREVIOUS POST -->
-    <div class="tile is-parent is-3">
-      <article class="tile is-child">
-        <app-post></app-post>
-      </article>
-    </div>
-    
-    <!-- LAST 5 STARRED REPOS -->
-    <div class="tile is-parent is-4">
-      <article class="tile is-child">
-        <app-starred></app-starred>
-      </article>
-    </div>
+<div class="home container is-fluid">  
+  <div class="tile is-ancestor">    
+    <div class="tile is-vertical">
+      <div class="tile is-parent">
+        
+        <div class="tile is-parent is-vertical is-3">
+          <article class="tile is-child">
+            <app-weather></app-weather>
+          </article>
+          <article class="tile is-child">
+            <app-learning></app-learning>
+          </article>
+        </div>
+        
+        <div class="tile is-parent is-vertical is-3">
+          <article class="tile is-child">
+            <app-post></app-post>
+          </article>
+          <article class="tile is-child">
+
+          </article>
+        </div>
+        
+        <div class="tile is-parent">
+          <article class="tile is-child">
+            <app-starred></app-starred>
+          </article>            
+        </div>          
+        
+      </div>            
+    </div>    
   </div>
 </div>
