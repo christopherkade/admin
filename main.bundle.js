@@ -698,12 +698,13 @@ var StarredComponent = (function () {
         this.repos = [];
     }
     StarredComponent.prototype.ngOnInit = function () {
-        // this.githubService.getStarred()
-        // .subscribe(repos => {
-        //   for (let i = 0; i < 5; i++) {
-        //     this.repos.push(repos[i]);
-        //   }      
-        // });
+        var _this = this;
+        this.githubService.getStarred()
+            .subscribe(function (repos) {
+            for (var i = 0; i < 5; i++) {
+                _this.repos.push(repos[i]);
+            }
+        });
     };
     StarredComponent.ctorParameters = function () { return [{ type: __WEBPACK_IMPORTED_MODULE_0__service_github_service__["a" /* GithubService */] }]; };
     return StarredComponent;
